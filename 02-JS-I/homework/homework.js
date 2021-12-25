@@ -165,11 +165,11 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0){
-    var pos = "Es positivo";
-    return pos;
+    //var pos = "Es positivo";
+    return true;
   }
-  var pos2 = "Es negativo";
-  return pos2;
+  //var pos2 = "Es negativo";
+  return false;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -250,7 +250,7 @@ function esVocal(letra){
   if (letra === 'o'){
     return "Es vocal";
   }
-  if (letra === 'o'){
+  if (letra === 'u'){
     return "Es vocal";
   }
   return "Dato incorrecto";
