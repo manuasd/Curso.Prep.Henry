@@ -164,12 +164,12 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 18){
+  if (numero > 0){
     var pos = "Es positivo";
     return pos;
   }
-  var pos = "Es negativo";
-  return pos;
+  var pos2 = "Es negativo";
+  return pos2;
 }
 
 function agregarSimboloExclamacion(str) {
@@ -184,7 +184,7 @@ function combinarNombres(nombre, apellido) {
   // Devuelve "nombre" y "apellido" combinados en una string y separados por un espacio.
   // Ejemplo: "Soy", "Henry" -> "Soy Henry"
   // Tu código:
-  var completo = nombre + apellido;
+  var completo = nombre + ' ' + apellido;
   return completo;
 }
 
@@ -236,7 +236,7 @@ function esVocal(letra){
   // Si no es vocal, tambien debe devolver "Dato incorrecto".
   //Escribe tu código aquí
   if (letra.length > 1){
-    return "Dato Incorrecto";
+    return "Dato incorrecto";
   }
   if (letra === 'a'){
     return "Es vocal";
@@ -253,7 +253,7 @@ function esVocal(letra){
   if (letra === 'o'){
     return "Es vocal";
   }
-  return "Dato Incorrecto";
+  return "Dato incorrecto";
 }
 
 
