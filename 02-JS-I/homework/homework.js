@@ -165,8 +165,8 @@ function esPositivo(numero) {
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
   if (numero > 0){
-    //var pos = "Es positivo";
-    return true;
+    var pos = "Es positivo";
+    return pos;
   }
   //var pos2 = "Es negativo";
   return false;
