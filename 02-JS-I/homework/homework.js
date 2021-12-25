@@ -168,8 +168,8 @@ function esPositivo(numero) {
     var pos = "Es positivo";
     return pos;
   }
-  //var pos2 = "Es negativo";
-  return false;
+  var pos2 = "Es negativo";
+  return pos2;
 }
 
 function agregarSimboloExclamacion(str) {
