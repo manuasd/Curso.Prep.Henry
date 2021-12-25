@@ -164,12 +164,15 @@ function esPositivo(numero) {
   //Si el número es positivo, devolver ---> "Es positivo"
   //Si el número es negativo, devolver ---> "Es negativo"
   //Si el número es 0, devuelve false
-  if (numero > 0){
+  if (numero >= 0){
     var pos = "Es positivo";
     return pos;
   }
-  var pos2 = "Es negativo";
+  if (numero < 0){
+    var pos2 = "Es negativo";
   return pos2;
+  }
+  return false;
 }
 
 function agregarSimboloExclamacion(str) {
