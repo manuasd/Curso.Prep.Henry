@@ -192,7 +192,7 @@ function tablaDelSeis(){
   for(var i = 0; i<=60; i++){
     tabla.push(6*i);
   }
-  return tabla;
+  return console.log(tabla);
 }
 
 function tieneTresDigitos(numero){
