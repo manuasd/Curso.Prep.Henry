@@ -45,7 +45,7 @@ function saludo(idioma) {
   // Tu código:
   switch(idioma){
     case 'aleman':
-      return 'Guten Tag';
+      return 'Guten Tag!';
       break;
     case 'mandarin':
       return 'Ni Hao!';
@@ -128,8 +128,8 @@ function operadoresLogicos(num1, num2, num3) {
   //0 no es ni positivo ni negativo. Si alguno de los argumentos es 0, retornar "Error".
   //Si no se cumplen ninguna de las condiciones anteriores, retornar false. 
   var nuevoValor = 0
-  if(((num1 > num2) && (num1 > num3) && (num1 > 0))){
-    return 'Numero 1 es mayor y positivo';
+  if(((num1 > num2) && (num1 > num3) && (num1 > 0)) && ((num1 * num2 * num3) > 0)){
+    return 'Número 1 es mayor y positivo';
   }else if ((num1 * num2 * num3) < 0){
     return 'Hay negativos';  
   }else if ((num3 > num1) && (num3 > num2)){
@@ -138,7 +138,7 @@ function operadoresLogicos(num1, num2, num3) {
   }else if ((num1 * num2 * num3) === 0){
     return 'Error';
   }else {
-    return false;
+    return false;o
   }
 }
 
@@ -150,11 +150,11 @@ function esPrimo(numero) {
   // Nota: Los números 0 y 1 NO son considerados números primos
   var primo = 0;
   for(var i = 1; i <= numero; i++){
-    if(numero % i === 0){
+    if(numero % i === 0 && numero > 1){
       primo = primo + 1;
-    } 
+    }
   }
-  if (primo > 2){
+  if (primo > 2 || numero <= 1){
     return false;
   }
   return true;
@@ -194,7 +194,7 @@ function doWhile(numero) {
   //Implementar una función tal que vaya aumentando el valor recibido en 5 hasta un límite de 8 veces
   //Retornar el valor final.
   //Usar el bucle do ... while.
-  var i = 0;
+  var i = 1;
   do{
     i += 1;
     numero = numero + 5
