@@ -144,13 +144,13 @@ function operadoresLogicos(num1, num2, num3) {
   var nuevoValor = 0
   if(((num1 > num2) && (num1 > num3) && (num1 > 0)) && ((num1 * num2 * num3) > 0)){
     return 'Número 1 es mayor y positivo';
+  }else if ((num1 * num2 * num3) === 0){
+    return 'Error';
   }else if ((num1 * num2 * num3) < 0){
     return 'Hay negativos';  
   }else if ((num3 > num1) && (num3 > num2)){
     var nuevoValor = num3 + 1;
     return nuevoValor;
-  }else if ((num1 * num2 * num3) === 0){
-    return 'Error';
   }else {
     return false;
   }
