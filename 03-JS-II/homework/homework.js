@@ -104,6 +104,19 @@ function estaEnRango(numero) {
   return false;
 }
 
+function esEntero(numero) {
+  // Devuelve "true" si "numero" es un entero (int/integer)
+  // Ejemplo: 0.8 -> false
+  // Ejemplo: 1 -> true
+  // Ejemplo: -10 -> true
+  // De lo contrario, devuelve "false"
+  // Pista: Puedes resolver esto usando `Math.floor`
+  // Tu código:
+  if(Math.floor(numero) - numero < 0){
+    return false;
+  }
+  return false;
+
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
   // Si "numero" es divisible entre 5, devuelve "buzz"
@@ -138,7 +151,7 @@ function operadoresLogicos(num1, num2, num3) {
   }else if ((num1 * num2 * num3) === 0){
     return 'Error';
   }else {
-    return false;o
+    return false;
   }
 }
 
@@ -214,7 +227,7 @@ module.exports = {
   colors,
   esDiezOCinco,
   estaEnRango,
-  //esEntero,
+  esEntero,
   fizzBuzz,
   operadoresLogicos,
   esPrimo,
