@@ -214,7 +214,7 @@ module.exports = {
   colors,
   esDiezOCinco,
   estaEnRango,
-  esEntero,
+  //esEntero,
   fizzBuzz,
   operadoresLogicos,
   esPrimo,
