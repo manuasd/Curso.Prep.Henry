@@ -116,6 +116,7 @@ function esEntero(numero) {
     return false;
   }
   return false;
+}
 
 function fizzBuzz(numero) {
   // Si "numero" es divisible entre 3, devuelve "fizz"
@@ -235,4 +236,4 @@ module.exports = {
   tablaDelSeis,
   tieneTresDigitos,
   doWhile
-}
+};
