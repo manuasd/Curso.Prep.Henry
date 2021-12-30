@@ -81,8 +81,8 @@ function arrayContiene(array, elemento) {
       contiene = true;
       return contiene;
     }
-    return contiene;
   }
+  return contiene;
 }
 
 
