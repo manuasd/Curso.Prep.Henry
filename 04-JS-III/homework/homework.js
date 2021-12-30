@@ -287,11 +287,13 @@ function continueStatement(numero) {
   // Tu código:
   var aumenta = [];
   var sum = 0;
+  var inc = 1
   for(var i = 1; i < 11; i++){
     if(i === 5){
     continue;
     }else{
-      sum = numero + (2*i);
+      sum = numero + (2*inc);
+      inc++;
       aumenta.push(sum);
     }
   }
