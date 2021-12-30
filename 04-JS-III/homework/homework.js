@@ -26,8 +26,9 @@ function incrementarPorUno(array) {
   // Aumenta cada entero por 1
   // y devuelve el array
   // Tu código:
+  var array1 = []
   for(var i = 0; i<array.length; i++){
-    array1 = array[i] + 1;
+    array.push(array[i] + 1);
   }
   return array1;
 }
@@ -76,7 +77,7 @@ function arrayContiene(array, elemento) {
   // Tu código:
   for(var i = 0; i < array.length; i++){
     if(array[i] === elemento){
-      return array[i] === elemento;
+      return true;
     }
     return false;
   }
