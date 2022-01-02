@@ -70,6 +70,7 @@ function tieneEmail(usuario) {
   if(usuario.email !== undefined){
   return usuario.email !== null;
   }
+  return false
 }
 
 
