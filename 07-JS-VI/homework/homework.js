@@ -22,18 +22,18 @@ function operacionMatematica(n1, n2, cb) {
   //Devolver el callback pasándole como argumentos los números recibidos.
   //Tu código:
   return cb(n1,n2)
-  }
 }
+
 
 function sumarArray(numeros, cb) {
   // Suma todos los números enteros (int/integers) de un array ("numeros")
   // Pasa el resultado a `cb`
   // No es necesario devolver nada
   //Tu código:
-  numeros.forEach(function(elemento,indice){
-    elemento += elemento;
+  var toCb = numeros.reduce(function(acumulador, elemento){
+    return acumulador + elemento;
   })
-
+ cb(toCb);
 }
 
 function forEach(array, cb) {
@@ -48,14 +48,17 @@ function map(array, cb) {
   // Itera sobre cada valor en "array", pásalo a `cb` y luego ubicar el valor devuelto por `cb` en un nuevo array
   // El nuevo array debe tener la misma longitud que el array del argumento
   //Tu código:
-  nArray = array.map(cb())
+  var nArray = array.map(function(elemento){
+    return cb(elemento);
+  })
+  return nArray;
 }
 
 function filter(array) {
   //Filtrar todos los elementos del array que comiencen con la letra "a".
   //Devolver un nuevo array con los elementos que cumplen la condición
   //Tu código:
-  let nArray = array.filter(function(array){return array[0] === 'a'})
+  return array.filter(function(array){return array[0] === 'a'})
 }
 
 // No modificar nada debajo de esta línea
