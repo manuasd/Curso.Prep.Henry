@@ -1,0 +1,14 @@
+#thirdDiv {
+    height: 600px;
+    width: 500px;
+    background-color: darkblue;
+    padding: 50px;
+    border: darkblue;
+    border-width: 2px;
+}
+#spanId{
+    margin: 50px;
+}
+.divClass{
+
+}
